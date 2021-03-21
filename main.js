@@ -12,6 +12,9 @@ app.get('/test',(req,res)=>{
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/test.html')
 })
+app.get('/submittest',(req,res)=>{
+    res.sendFile(__dirname + '/submittest.html')
+})
 const port = process.env.PORT || 3000
 app.listen(port,()=>{
     console.log("WhatsUpp")
